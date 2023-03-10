@@ -1,0 +1,14 @@
+#showingDiv{
+    display: flex;
+    gap: 15px;
+}
+
+.correct {
+    background-color: green;
+    color: white;
+}
+
+.wrong {
+    background-color: red;
+    color: white;
+}
