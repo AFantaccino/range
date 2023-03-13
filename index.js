@@ -46,5 +46,6 @@ showingDiv.addEventListener('click', (e) => {
     if (e.target.tagName == 'BUTTON') {
         e.target.parentElement.remove()
         tempNumbs.splice(targetId, 1);
+// dovrei aggiungere idx = targetid altrimenti aggiungo i numeri nel posto sbagliato dell'array
     }
 })
