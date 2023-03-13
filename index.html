@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,18 +8,19 @@
     <link rel="stylesheet" href="style.css">
     <title>range</title>
 </head>
+
 <body>
     <form id="form">
         <label for="min">Min
-            <input type="number" id="min">
+            <input type="number" id="min" placeholder="0">
         </label>
         <label for="max">Max
-            <input type="number" id="max">
+            <input type="number" id="max" placeholder="0">
         </label>
         <label for="numbers">Numbers
-            <input type="number" id="numbers">
+            <input type="number" id="numbers" placeholder="0">
         </label>
-        <input type="button" id="addBtn" value="+">
+        <button type="button" id="addBtn">+</button>
         <button id="test" type="submit">Test</button>
     </form>
     <div id="showingDiv">
@@ -26,4 +28,5 @@
     </div>
     <script src="./index.js"></script>
 </body>
+
 </html>

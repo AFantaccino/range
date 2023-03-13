@@ -6,11 +6,11 @@ function range(min, max, ...numbers) {
     for (const number of numbers) {
 
         const numberDiv = document.querySelector(`.number${numbers.indexOf(number)}`).classList
-        
+
         if (number >= min && number <= max) {
             numberDiv.remove("wrong")
             numberDiv.add("correct")
-        
+
         } else {
             numberDiv.remove("correct")
             numberDiv.add("wrong")
@@ -41,8 +41,8 @@ addBtn.addEventListener('click', () => {
 
 showingDiv.addEventListener('click', (e) => {
 
-    let targetId = Array.from(e.target.parentElement.parentElement.children).indexOf(e.target.parentElement)
-    
+    let targetId = Array.from(showingDiv.children).indexOf(e.target.parentElement)
+
     if (e.target.tagName == 'BUTTON') {
         e.target.parentElement.remove()
         tempNumbs.splice(targetId, 1);
