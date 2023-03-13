@@ -1,6 +1,7 @@
 #showingDiv {
     display: flex;
-    gap: 15px;
+    padding: 5px;
+    gap: 10px;
 }
 
 .correct {
